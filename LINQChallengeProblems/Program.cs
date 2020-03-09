@@ -50,7 +50,7 @@ namespace LINQChallengeProblems
                 "98,100,66,74,55"
             };// Original list
 
-            classGrades.ForEach(m => m.Split(',').ToArray().Select(s => int.Parse(s)).OrderByDescending(h => h));
+            classGrades.ForEach(m => m.Split(',').ToArray().Select(s => int.Parse(s)).OrderByDescending(h => h).Select(n => n != m.Min()));
 
 
             /*
