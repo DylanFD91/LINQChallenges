@@ -26,7 +26,13 @@ namespace LINQChallengeProblems
                 List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" }; *UNION LIST METHOD*
             */
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
-
+            List<string> tempList = new List<string>();
+            var namesNoDupes = names.Union(tempList);
+            foreach (var item in namesNoDupes)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();
 
 
             /*
