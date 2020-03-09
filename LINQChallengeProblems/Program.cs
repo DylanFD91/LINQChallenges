@@ -14,14 +14,18 @@ namespace LINQChallengeProblems
                 List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", “mathematics” };
             */
             List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
-
-
+            List<string> wordsWith_th = words.FindAll(m => m.Contains("th"));
+            foreach (var word in wordsWith_th)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine();
 
             /*
             2. Using LINQ, write a function that takes in a list of strings and returns a copy of the list without duplicates.
-                List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
+                List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" }; *UNION LIST METHOD*
             */
-
+            List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
 
 
 
